@@ -19,9 +19,6 @@ use App\Http\Controllers\UserController;
 Route::get('/', function () {
 		return 'главная страница сайта';
 	});
-Route::get('/post1', [PostController::class, 'show']);
 Route::get('/user', [UserController::class, 'show']);
 Route::get('/user/all', [UserController::class, 'all']);
-Route::get('/user/{name}', [UserController::class, 'byName']);
-Route::get('/user/{surname}/{name}', [UserController::class, 'fullName']);
-Route::get('/users/{name}', [UserController::class, 'city']);
+Route::get('/user/profile', [UserController::class, 'profile']);
