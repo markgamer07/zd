@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ $title }}</title>
+    <title>{{ $title ?? 'Default' }}</title>
 </head>
 <body>
 
-    {{ $slot }}
+{{ $slot }}
 
 </body>
 </html>

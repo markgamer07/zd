@@ -19,6 +19,9 @@ use App\Http\Controllers\UserController;
 Route::get('/', function () {
 		return 'главная страница сайта';
 	});
-Route::get('/user', [UserController::class, 'show']);
-Route::get('/user/all', [UserController::class, 'all']);
-Route::get('/user/profile', [UserController::class, 'profile']);
+Route::get('/task1', [UserController::class, 'task1']);
+Route::get('/task2', [UserController::class, 'task2']);
+Route::get('/task3', [UserController::class, 'task3']);
+Route::get('/task4', [UserController::class, 'task4']);
+Route::get('/task5', [UserController::class, 'task5']);
+Route::get('/task6', [UserController::class, 'task6']);
